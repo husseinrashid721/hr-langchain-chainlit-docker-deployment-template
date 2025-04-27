@@ -1,20 +1,19 @@
-[tool.poetry]
-name = "langchain-chainlit-docker-template"
+[project]
+name = "hr-langchain-chainlit-docker-deployment-template"
 version = "0.1.0"
-description = "A template langchain Chainlit App with Docker Deployments"
-authors = ["Amjad Raza"]
-license = "MIT"
+description = ""
+authors = [{name = "Hussein xxx",email = "id721@users.noreply.github.com"}]
 readme = "README.md"
-packages = [{include = "langchain_chainlit_docker_deployment_template"}]
-
+requires-python = ">=3.12,<4.0.0"
+packages = [{include = "hr-langchain-chainlit-docker-deployment-template"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
-langchain = "0.0.199"
-openai = "0.27.8"
-chainlit = "0.3.0"
-
+langchain = "0.3.24"
+chainlit = "2.5.5"
+cython = "^3.0.0b1"
+langchain-community = "^0.3.22"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+

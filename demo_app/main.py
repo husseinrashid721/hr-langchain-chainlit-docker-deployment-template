@@ -1,14 +1,14 @@
 """Python file to serve as the frontend"""
 import sys
 import os
-sys.path.append(os.path.abspath('.'))
-
-from langchain import PromptTemplate, OpenAI, LLMChain
+import langchain
 import chainlit as cl
+# import langchain_community
 
+#from langchain_community import PromptTemplate, OpenAI, LLMChain
 from chainlit import user_session
 
-user_env = user_session.get("env")
+# user_env = user_session.get("env")
 
 # os.environ["OPENAI_API_KEY"] = ""
 
