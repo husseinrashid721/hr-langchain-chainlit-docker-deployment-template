@@ -6,4 +6,4 @@ services:
     ports:
       - "8000:8000"
     working_dir: /home/appuser/app/
-    command: ["chainlit", "run", "/home/appuser/app/demo_app/main.py"]
+    command: ["chainlit", "run", "/home/appuser/app/demo_app/main.py"] 

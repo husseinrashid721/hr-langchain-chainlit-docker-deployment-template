@@ -47,9 +47,11 @@ WORKDIR /home/appuser/app/
 # Copy virtual environment from builder
 COPY --chown=1001:1001 --from=builder ${VIRTUAL_ENV} ${VIRTUAL_ENV}
 
+
 # Copy application files
 COPY ./chainlit.md /home/appuser/app/chainlit.md
 COPY --chown=1001:1001 ./.chainlit /home/appuser/app/.chainlit
 COPY ./demo_app /home/appuser/app/demo_app
 
+#force to port 8000
 CMD ["chainlit", "run", "/home/appuser/app/demo_app/main.py", "--host", "0.0.0.0", "--port", "8000"]
